@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Favourite Language Survey</title>
+    </head>
+    <body>
+        <h1>Welcome to the Survey</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+              <legend>Add user</legend>
+
+              <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+              </div>
+
+              <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+              </div>
+
+              <div>
+                <label for="role">Role</label>
+                <select id="role" name="user_role_name">
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="guest">Guest</option>
+                </select>
+              </div>
+
+              <p>
+                Choose your favorite programming language:
+                <div>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" name="programming_language" value="html">
+                </div>
+                <div>
+                    <label for="css"> CSS</label>
+                    <input type="radio" id="css" name="programming_language" value="css">
+                </div>
+                <div>
+                    <label for="javascript">JavaScript</label>
+                    <input type="radio" id="javascript" name="programming_language" value="javascript">
+                </div>
+              </p>
+
+              <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+              </div>
+
+              <div>
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date">
+              </div>
+              <div>
+                  <label for="newsletter">Sign up for Newsletter</label>
+                  <input type="checkbox" id="newsletter" name="newsletter">
+              </div>
+              <div>
+                  <label for="terms">Agree to terms and conditions</label>
+                  <input type="checkbox" id="terms" name="terms">
+              </div>
+
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+
+            </fieldset>
+          </form>
+    </body>
+
+
+
+</html>
